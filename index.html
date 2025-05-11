@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+</head>
+<body>
+
+    <label>Тип зброї:
+      <select id="weaponType">
+        <option value="rifle">Гвинтівка</option>
+        <option value="pistol">Пістолет</option>
+        <option value="autoGun">Автомат</option>
+      </select>
+    </label><br>
+
+    <label>Рік:
+      <input type="number" id="weaponYear" value="2022">
+    </label><br>
+
+    <label><input type="checkbox" value="scope"> Приціл</label><br>
+    <label><input type="checkbox" value="nightvision"> Нічне бачення</label><br>
+    <label><input type="checkbox" value="silencer"> Глушник</label><br><br>
+
+    <button onclick="addWeapon()">Додати</button>
+    <button onclick="showWeapons()">Список</button>
+    <button onclick="showMostExpensive()">Найдорожча</button>
+    <button onclick="revaluate()">Переоцінити</button>
+
+    <pre id="log"></pre>
+
+    <script src="./script.js"></script>
+</body>
+</html>
